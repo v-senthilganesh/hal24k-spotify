@@ -9,7 +9,7 @@ const Discover = () => {
   const [newReleases, setNewReleases] = useState([]);
   const [playlists, setPlaylists] = useState([]);
   const [categories, setCategories] = useState([]);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   // useEffect(() => {
   //   dispatch(GetNewReleases());

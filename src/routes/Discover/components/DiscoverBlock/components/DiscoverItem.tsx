@@ -19,8 +19,8 @@ export type DiscoverItemProps = {
 
 const DiscoverItem = ({ images, icons, name, id }: DiscoverItemProps) => {
   return (
-    <Link to={`album/${id}`}>
-      <div className="discover-item animate__animated animate__fadeIn">
+    <div className="discover-item animate__animated animate__fadeIn">
+      <Link to={`album/${id}`}>
         <div
           className="discover-item__art"
           style={{
@@ -30,8 +30,8 @@ const DiscoverItem = ({ images, icons, name, id }: DiscoverItemProps) => {
           }}
         />
         <p className="discover-item__title">{name}</p>
-      </div>
-    </Link>
+      </Link>
+    </div>
   );
 };
 

@@ -18,8 +18,6 @@ const Album = () => {
 
   useEffect(() => {
     axios.get(`/albums/${albumId}`).then((response) => {
-      console.log(response);
-
       setAlbumDetail(response.data);
     });
   }, [albumId]);
