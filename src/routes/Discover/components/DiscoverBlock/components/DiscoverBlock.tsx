@@ -46,8 +46,14 @@ const DiscoverBlock = ({ text, id, data }: DiscoverBlockProps) => {
         ) : null}
       </div>
       <div className="discover-block__row" id={id}>
-        {data.map(({ image, name }) => (
-          <DiscoverItem key={name} image={image} name={name} />
+        {data.map(({ images, icons, name, id }) => (
+          <DiscoverItem
+            key={name}
+            images={images}
+            icons={icons}
+            name={name}
+            id={id}
+          />
         ))}
       </div>
     </div>
